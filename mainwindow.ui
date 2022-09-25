@@ -215,9 +215,15 @@ padding: 5px;</string>
      <string>About</string>
     </property>
    </widget>
+   <widget class="QMenu" name="menuTheme">
+    <property name="title">
+     <string>Theme</string>
+    </property>
+   </widget>
    <addaction name="menuFile"/>
    <addaction name="menuElectronic_Playcard"/>
    <addaction name="menuCommitee"/>
+   <addaction name="menuTheme"/>
    <addaction name="menuAbout"/>
   </widget>
  </widget>
