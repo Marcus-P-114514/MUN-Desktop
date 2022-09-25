@@ -47,17 +47,96 @@
      <widget class="QStackedWidget" name="nav_bar">
       <property name="minimumSize">
        <size>
-        <width>200</width>
+        <width>256</width>
         <height>0</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
-        <width>200</width>
+        <width>256</width>
         <height>16777215</height>
        </size>
       </property>
-      <widget class="QWidget" name="page_3"/>
+      <widget class="QWidget" name="page_3">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QPushButton" name="switch_general_speaker_list">
+          <property name="styleSheet">
+           <string notr="true">text-align: left;</string>
+          </property>
+          <property name="text">
+           <string>General Speaker List</string>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="switch_single_speaker">
+          <property name="styleSheet">
+           <string notr="true">text-align: left;</string>
+          </property>
+          <property name="text">
+           <string>Single Speaker</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="switch_moderated_cacus">
+          <property name="styleSheet">
+           <string notr="true">text-align: left;</string>
+          </property>
+          <property name="text">
+           <string>Moderated Caucus</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="switch_unmoderated_cacus">
+          <property name="styleSheet">
+           <string notr="true">text-align: left;</string>
+          </property>
+          <property name="text">
+           <string>Unmoderated Caucus</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="switch_voting_procedure">
+          <property name="styleSheet">
+           <string notr="true">text-align: left;</string>
+          </property>
+          <property name="text">
+           <string>Voting Procedure</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="switch_roll_call">
+          <property name="styleSheet">
+           <string notr="true">text-align: left;</string>
+          </property>
+          <property name="text">
+           <string>Roll Call</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>279</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
       <widget class="QWidget" name="page_4"/>
      </widget>
     </item>
@@ -88,7 +167,20 @@ padding: 5px;</string>
     </item>
     <item row="2" column="2">
      <widget class="QStackedWidget" name="main_frame">
-      <widget class="QWidget" name="page_5"/>
+      <widget class="QWidget" name="page_5">
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Please create/open a commitee using the toolbar.</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
       <widget class="QWidget" name="page_6"/>
      </widget>
     </item>
@@ -113,8 +205,20 @@ padding: 5px;</string>
      <string>Electronic Playcard</string>
     </property>
    </widget>
+   <widget class="QMenu" name="menuCommitee">
+    <property name="title">
+     <string>Commitee</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+   </widget>
    <addaction name="menuFile"/>
    <addaction name="menuElectronic_Playcard"/>
+   <addaction name="menuCommitee"/>
+   <addaction name="menuAbout"/>
   </widget>
  </widget>
  <resources/>
